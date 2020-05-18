@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-calculator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/react-calculator/static/js/main.314df63e.chunk.js",
+    "main.js.map": "/react-calculator/static/js/main.314df63e.chunk.js.map",
+    "runtime-main.js": "/react-calculator/static/js/runtime-main.d3b7e15a.js",
+    "runtime-main.js.map": "/react-calculator/static/js/runtime-main.d3b7e15a.js.map",
+    "static/js/2.84236935.chunk.js": "/react-calculator/static/js/2.84236935.chunk.js",
+    "static/js/2.84236935.chunk.js.map": "/react-calculator/static/js/2.84236935.chunk.js.map",
+    "index.html": "/react-calculator/index.html",
+    "precache-manifest.8ac92cf4c1c56ea90b577ff2227afd67.js": "/react-calculator/precache-manifest.8ac92cf4c1c56ea90b577ff2227afd67.js",
+    "service-worker.js": "/react-calculator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/react-calculator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.84236935.chunk.js.LICENSE.txt": "/react-calculator/static/js/2.84236935.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-calculator/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3b7e15a.js",
+    "static/js/2.84236935.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.314df63e.chunk.js"
+  ]
+}
