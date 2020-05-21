@@ -8,15 +8,7 @@ import Buttons from "./components/Buttons";
 //vars
 const isOperator = /[x/+‑]/,
   endsWithOperator = /[x+‑/]$/,
-  endsWithNegativeSign = /[x/+]‑$/,
-  clearStyle = { background: "#ac3939" },
-  operatorStyle = { background: "#666666" },
-  equalsStyle = {
-    background: "#004466",
-    position: "absolute",
-    height: 130,
-    bottom: 5,
-  };
+  endsWithNegativeSign = /[x/+]‑$/;
 
 class App extends Component {
   constructor(props) {
