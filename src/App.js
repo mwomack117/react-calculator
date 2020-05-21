@@ -1,26 +1,66 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+// Components
+import Formula from "./components/Formula";
+import Output from "./components/Output";
+import Buttons from "./components/Buttons";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//vars
+const isOperator = /[x/+‑]/,
+  endsWithOperator = /[x+‑/]$/,
+  endsWithNegativeSign = /[x/+]‑$/,
+  clearStyle = { background: "#ac3939" },
+  operatorStyle = { background: "#666666" },
+  equalsStyle = {
+    background: "#004466",
+    position: "absolute",
+    height: 130,
+    bottom: 5,
+  };
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentVal: "0",
+      prevVal: "0",
+      formula: "",
+      // currentSign: "pos",
+      lastClicked: "",
+      evaluated: false,
+    };
+  }
+
+  maxDigitWarning = () => {
+    this.setState({
+      currentVal: "Max Digit Limit",
+      prevVal: this.state.currentVal,
+    });
+    setTimeout(() => this.setState({ currentVal: this.state.prevVal }), 1000);
+  };
+
+  reset = () => {
+    this.setState({
+      currentVal: "0",
+      prevVal: "0",
+      formula: "",
+      // currentSign: "pos",
+      lastClicked: "",
+      evaluated: false,
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <div className="calculator">
+          <Output currentValue={this.state.currentVal} />
+          <Formula formula={this.state.formula} />
+          <Buttons />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
